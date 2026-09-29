@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="#" class="logo">
+          <span class="bracket">&lt;</span>
+          <span>Kranthi</span>
+          <span class="bracket">/&gt;</span>
+        </a>
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Hello, <span>Kranthi</span> here.</h1>
+              <p>
+                I'm learning, building, and creating. A student exploring
+                technology, design, and problem-solving through projects and
+                continuous learning.
+              </p>
+              <a href="#contact" class="hello-button">
+                <svg width="20" height="20" viewBox="0 0 24 20">
+                  <path
+                    d="M2 3C1 3 0 4 0 5V17C0 18 1 19 2 19H20C21 19 22 18 22 17V5C22 4 21 3 20 3H2ZM2 6L11 12L20 6V17H2V6Z"
+                    fill="#0080FF"
+                  />
+                </svg>
+                <span>Say Hello!</span>
+              </a>
+            </div>
+            <div class="hero-image">
+              <img src="your-image.png" alt="Kranthi" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote">
+        <h1>The more I learn, the more I realize how much I don’t know.</h1>
+        <h2>— A CURIOUS MIND</h2>
+        <p>
+          Approaching software development with humility, curiosity, and an
+          appetite for first-principles thinking.
+        </p>
+      </section>
+      <section class="projects-section" id="projects">
+        <div class="projects-header">
+          <h2>Projects</h2>
+          <div class="projects-line"></div>
+          <a href="#projects" class="view-all">
+            <span>View all</span>
+            <span class="arrow">~&gt;</span>
+          </a>
+        </div>
+        <div class="projects-grid">
+          <!-- Neural Network -->
+          <div class="project-card">
+            <div class="project-image neural-network"></div>
+
+            <div class="tech-bar">Python NumPy</div>
+
+            <div class="project-content">
+              <div>
+                <h3>Neural Network</h3>
+                <p>
+                  Built using Python with only the NumPy library. This is for
+                  the MNIST dataset.
+                </p>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="live-button">Live &lt;~&gt;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Own Shell -->
+          <div class="project-card">
+            <div class="project-image shell-image"></div>
+            <div class="tech-bar">C</div>
+            <div class="project-content">
+              <div>
+                <h3>Own Shell</h3>
+                <p>Discord anti-crash bot</p>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="live-button">Live &lt;~&gt;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio -->
+          <div class="project-card">
+            <div class="project-image portfolio-image"></div>
+            <div class="tech-bar">HTML CSS JS</div>
+            <div class="project-content">
+              <div>
+                <h3>Portfolio Website</h3>
+                <p>To present my work.</p>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="live-button">Live &lt;~&gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutme-section" id="aboutme">
+        <div class="aboutme-header">
+          <h2>about me</h2>
+          <div class="aboutme-line"></div>
+          <a href="#aboutme" class="view-all">
+            <span>View all</span>
+            <span class="arrow">~&gt;</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

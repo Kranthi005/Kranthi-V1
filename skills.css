@@ -1,0 +1,277 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: #131313;
+  color: #ffffff;
+
+  font-family: "Fira Code", monospace;
+}
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.container {
+  width: min(100% - 48px, 1200px);
+  margin-inline: auto;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: min(100%, 1200px);
+  height: 60px;
+
+  margin-inline: auto;
+
+  background-color: #18181b;
+}
+
+.header-container {
+  width: 100%;
+  height: 60px;
+
+  padding-inline: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==============================
+   LOGO
+============================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.bracket {
+  color: #0a84ff;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar a {
+  padding: 6px 12px;
+
+  color: #a1a1aa;
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  background-color: rgba(39, 39, 42, 0.6);
+}
+
+.navbar a.active {
+  color: #ffffff;
+}
+
+/* ==============================
+   SKILLS INTRO
+============================== */
+
+.skills-intro {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 24px;
+
+  background-color: #131313;
+}
+
+.skills-intro h1 {
+  max-width: 1200px;
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Mukta", sans-serif;
+  font-size: clamp(64px, 8vw, 120px);
+  font-weight: 300;
+  line-height: 1.05;
+
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+/* ==============================
+   SKILLS SECTION
+============================== */
+
+.skills-section {
+  padding-bottom: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   SKILL CARD
+============================== */
+
+.skill-card {
+  min-height: 354px;
+
+  padding: 50px 40px;
+
+  background-color: #1e1e1e;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  width: 100%;
+  min-height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-section img {
+  width: 99px;
+  height: 99px;
+
+  object-fit: contain;
+}
+
+.image-section.tools {
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.card-content {
+  margin-top: auto;
+}
+
+.card-content h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: auto;
+}
+
+.card-content p {
+  margin: 0;
+  color: #aaaaaa;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: auto;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-bottom: 24px;
+}
+
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 18px;
+
+  background-color: #121212;
+  color: #eeeeee;
+
+  border-radius: 999px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.skill-card:has(.skill-tags) {
+  justify-content: flex-start;
+}
+
+.skill-card:has(.skill-tags) .card-content {
+  margin-top: auto;
+}
+
+.frontend-card {
+  grid-column: 1 / -1;
+}
+
+.frontend-icons {
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+.frontend-icons img {
+  width: 99px;
+  height: 99px;
+
+  padding: 16px;
+
+  background-color: #121212;
+  border-radius: 50%;
+}
+
+.frontend-card .card-content{
+  margin-top: 30px;
+}
